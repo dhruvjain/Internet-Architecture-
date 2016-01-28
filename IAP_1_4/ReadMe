@@ -1,3 +1,5 @@
+Please read the report to understand the difference between the two scenarios
+
 1.) To Create the topology for STP disabled, run the "topology_stp_disabled.sh" file using sh topology_stp_disabled.sh
 
 2.) Similarly to create the toplogy for STP enabled, run "topology_stp_enabled.sh" file using sh topology_stp_enabled.sh
