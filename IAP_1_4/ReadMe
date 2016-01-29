@@ -1,0 +1,21 @@
+1.) To Create the topology for STP disabled, run the "topology_stp_disabled.sh" file using sh topology_stp_disabled.sh
+
+2.) Similarly to create the toplogy for STP enabled, run "topology_stp_enabled.sh" file using sh topology_stp_enabled.sh
+
+3.) Compile the udp server and client files using 
+
+	* gcc client.c -o client
+	* gcc server.c -o server
+
+4.) Run the server on h2 by
+	ip netns exec h2 ./server 
+
+	Then enter the port no. say 1234
+
+5.) Run the client on h1 by 
+	ip netns exec h1 ./client 10.0.10.2 hello
+	The enter the same port as entered in server side
+
+6.) delete both of the toplogies using "sh delete_topology.sh"
+
+The traces of corresponding scenerios are also attached: capture_sc1.pcapng for stp Disabled and capture_sc2.pcapng for stp Enabled
